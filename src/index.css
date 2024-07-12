@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5dc;
+  color: #264e74;
+}
+
+.modal-body {
+  background-color: #f5f5dc;
+  color: #264e74;
+}
+
+.modal-header {
+  background-color: #f5f5dc;
+  color: #264e74;
+}
+
+.modal-content {
+  background-color: #f5f5dc;
+}
+
+[data-theme='dark'] {
+  background-color: rgb(48, 47, 47);
+  color: white;
+  --primary: #f5f5dc;
+}
+
+[data-theme='dark'] .modal-content {
+  background-color: rgb(48, 47, 47);
+}
+
+[data-theme='dark'] .modal-body {
+  background-color: rgb(48, 47, 47);
+  color: white;
+}
+
+[data-theme='dark'] .modal-header {
+  background-color: rgb(48, 47, 47);
+  color: white;
+}
+
+[data-theme='dark'] .btn-close {
+  background-color: rgb(48, 47, 47);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+[data-theme='dark'] .home-container {
+  color: white;
+}
+[data-theme='dark'] .contact-form{
+  background-color: rgb(48, 47, 47);
+  color: white;
+  border-color: rgb(151, 150, 150);
+}
+[data-theme='dark'] .education-cards{
+  background-color: rgb(48, 47, 47);
+  color: white;
+  border-color: rgb(151, 150, 150);
+  .college-name{
+    color: white;
+  }
+}
