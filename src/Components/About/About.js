@@ -12,11 +12,12 @@ import {
   Degree,
   AboutSideHeadings,
 } from "../../styles/App.css.js";
-import { aboutParagraph1, aboutParagraph2 } from "../../constants.js";
+import { aboutParagraph1 } from "../../constants.js";
 import { College } from "../../data.js";
 import graduation from "../../Images/graduation.png";
 import "../../index.css";
 import Experience from "./Experience.js";
+import Skills from "./skills.js";
 const About = () => {
   return (
     <HomeContainer>
@@ -29,7 +30,7 @@ const About = () => {
         <AboutHeading className="home-container">Hi, there!</AboutHeading>
       </AnimatedOnScroll>
       <AnimatedOnScroll
-        animationIn="bounceInLeft"
+        animationIn="bounceInUp"
         delay={0.1 * 1000}
         style={{
           marginTop: "20px",
@@ -39,19 +40,9 @@ const About = () => {
           {aboutParagraph1}
         </AboutParagraph>
       </AnimatedOnScroll>
-      <AnimatedOnScroll
-        delay={0.3 * 1000}
-        animationIn="bounceInRight"
-        style={{
-          marginTop: "20px",
-        }}
-      >
-        <AboutParagraph className="home-container">
-          {aboutParagraph2}
-        </AboutParagraph>
-      </AnimatedOnScroll>
-
-      <AnimatedOnScroll animationIn="bounceInLeft">
+      <Experience />
+      <Skills />
+      <AnimatedOnScroll animationIn="bounceInUp">
         <AboutSideHeadings className="home-container">
           Education:
         </AboutSideHeadings>
@@ -60,7 +51,7 @@ const About = () => {
       {College.map((college) => {
         return (
           <div style={{ marginTop: "1rem" }}>
-            <AnimatedOnScroll animationIn="bounceInLeft">
+            <AnimatedOnScroll animationIn="bounceInUp">
               <GraduationStyledCard className="education-cards">
                 <ImageWrapper>
                   <img src={graduation} alt="graduation" />
@@ -82,7 +73,6 @@ const About = () => {
           </div>
         );
       })}
-      <Experience />
     </HomeContainer>
   );
 };

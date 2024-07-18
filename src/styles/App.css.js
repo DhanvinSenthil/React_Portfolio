@@ -119,6 +119,48 @@ export const NavMenu = styled.div`
        }`
         : `display:none`};
   }
+  @media screen and (max-width: 415px) {
+    ${(props) =>
+      props.isOpen
+        ? `position:absolute;
+       z-index:100;
+       width:100%;
+       height: -webkit-fill-available;       
+       display:flex;
+       background-color:grey;
+       flex-direction:column;
+       align-items: center;
+       justify-content: center;
+       padding-top:200px;
+       padding-bottom:200px;
+       a{
+       color:white;
+       ::active{
+       }
+       }`
+        : `display:none`};
+  }
+  @media screen and (max-width: 320px) {
+    ${(props) =>
+      props.isOpen
+        ? `position:absolute;
+       z-index:100;
+       width:100%;
+       height: -webkit-fill-available;       
+       display:flex;
+       background-color:grey;
+       flex-direction:column;
+       align-items: center;
+       justify-content: center;
+       padding-top:100px;
+       padding-bottom:100px;
+       a{
+       color:white;
+       ::active{
+       }
+       }`
+        : `display:none`};
+  }
 `;
 
 export const NavBtn = styled.nav`
@@ -196,6 +238,7 @@ export const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 4rem;
+  overflow: hidden;
   @media screen and (max-width: 768px) {
     display: grid;
     justify-content: center;
@@ -233,6 +276,12 @@ export const Contactinfo = styled.div`
   width: 15rem;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 375px) {
+    margin-left: 60px;
+  }
+  @media screen and (max-width: 320px) {
+    margin-left: 40px;
+  }
 `;
 export const NameContainer = styled.div`
   padding: 0;
@@ -568,13 +617,42 @@ export const NavBarIcons = styled.div`
     gap: 0.5rem;
   }
 `;
-export const AboutSideHeadings = styled.h2`
+export const AboutSideHeadings = styled.div`
   align-items: center;
+  font-size: 1.7rem;
   display: flex;
   margin-top: 2rem;
   margin-left: 40px;
   margin-right: 40px;
   @media screen and (max-width: 768px) {
     display: grid;
+    font-size: 1rem;
   }
 `;
+export const ThankMsg = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+  button {
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: #76cf76;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+

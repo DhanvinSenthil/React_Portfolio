@@ -42,6 +42,9 @@ import {
   Proj3Extenddesc,
   Proj3Technologies,
   Proj3Features,
+  Proj2Git,
+  Proj3Git,
+  Proj4Git,
 } from "../../constants";
 import { FiGithub } from "react-icons/fi";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -68,7 +71,7 @@ const Projects = () => {
             <Card.Body>
               <CardsStyleTitle style={{}}>
                 {Proj1Title}
-                <CardsGitLink href={Proj1Git}>
+                <CardsGitLink href={Proj1Git} target="_blank" rel="noreferrer">
                   <FaGithub color="#e747ee" />
                 </CardsGitLink>
               </CardsStyleTitle>
@@ -112,7 +115,7 @@ const Projects = () => {
                 {Proj1Technologies}
               </CardsStyleSubtitle>
               <ModalGitButton>
-                <a href={Proj1Git}>
+                <a href={Proj1Git} target="_blank" rel="noreferrer">
                   <button>
                     <FiGithub size={"30px"} /> Github
                   </button>
@@ -126,7 +129,7 @@ const Projects = () => {
             <Card.Body>
               <CardsStyleTitle style={{}}>
                 {Proj2Title}
-                <CardsGitLink href={Proj1Git}>
+                <CardsGitLink href={Proj2Git} target="_blank" rel="noreferrer">
                   <FaGithub color="#e747ee" />
                 </CardsGitLink>
               </CardsStyleTitle>
@@ -170,7 +173,7 @@ const Projects = () => {
                 {Proj2Technologies}
               </CardsStyleSubtitle>
               <ModalGitButton>
-                <a href={Proj1Git}>
+                <a href={Proj2Git} target="_blank" rel="noreferrer">
                   <button>
                     <FiGithub size={"30px"} /> Github
                   </button>
@@ -184,7 +187,7 @@ const Projects = () => {
             <Card.Body>
               <CardsStyleTitle style={{}}>
                 {Proj3Title}
-                <CardsGitLink href={Proj1Git}>
+                <CardsGitLink href={Proj3Git} target="_blank" rel="noreferrer">
                   <FaGithub color="#e747ee" />
                 </CardsGitLink>
               </CardsStyleTitle>
@@ -228,7 +231,7 @@ const Projects = () => {
                 {Proj3Technologies}
               </CardsStyleSubtitle>
               <ModalGitButton>
-                <a href={Proj1Git}>
+                <a href={Proj3Git}target="_blank" rel="noreferrer">
                   <button>
                     <FiGithub size={"30px"} /> Github
                   </button>
@@ -242,10 +245,10 @@ const Projects = () => {
             <Card.Body>
               <CardsStyleTitle style={{}}>
                 {Proj4Title}
-                <CardsGitLink href={Proj1Git}>
+                <CardsGitLink href={Proj4Git} target="_blank" rel="noreferrer">
                   <FaGithub color="#e747ee" />
                 </CardsGitLink>
-                <a href={Proj4Live}>
+                <a href={Proj4Live} target="_blank" rel="noreferrer">
                   <FaExternalLinkAlt color="#e747ee" />
                 </a>
               </CardsStyleTitle>
@@ -289,12 +292,12 @@ const Projects = () => {
                 {Proj4Technologies}
               </CardsStyleSubtitle>
               <Project4GitLive>
-                <a href={Proj1Git}>
+                <a href={Proj4Git} target="_blank" rel="noreferrer">
                   <button>
                     <FiGithub size={"30px"} /> Github
                   </button>
                 </a>
-                <a href={Proj4Live}>
+                <a href={Proj4Live} target="_blank" rel="noreferrer">
                   <button>
                     <FaExternalLinkAlt size={"20px"} /> Live Demo
                   </button>

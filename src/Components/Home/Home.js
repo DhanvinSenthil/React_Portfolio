@@ -4,6 +4,7 @@ import linkedin from "../../Images/linkedin.png";
 import github from "../../Images/github.png";
 import whatsapp from "../../Images/whatsapp.png";
 import instagram from "../../Images/instagram.png";
+import gmail from "../../Images/gmail.png";
 
 import {
   MyImage,
@@ -45,16 +46,42 @@ const Home = () => {
         </AnimatedOnScroll>
         <AnimatedOnScroll animationIn="bounceInUp">
           <Contactinfo>
-            <a href="https://www.linkedin.com/in/dhanvin-s-0357a521b/">
+            <a
+              href="https://www.linkedin.com/in/dhanvin-s-0357a521b/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={linkedin} alt="Hello" width="30px" height="30px" />
             </a>
-            <a href="https://github.com/DhanvinSenthil?tab=repositories">
+            <a
+              href="https://github.com/DhanvinSenthil?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={github} alt="Hello" width="30px" height="30px" />
             </a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B919361560831&text=Hello+Dhanvin">
+            <a href="mailto:dhanvinsenthil2509@gmail.com">
+              <img
+                src={gmail}
+                alt="Hello"
+                width="30px"
+                height="30px"
+                target="_blank"
+                rel="noreferrer"
+              />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B919361560831&text=Hello+Dhanvin"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={whatsapp} alt="Hello" width="30px" height="30px" />
             </a>
-            <a href="https://www.instagram.com/broken_soulsymphony?igsh=MXVzamdueDhobWI1eQ==">
+            <a
+              href="https://www.instagram.com/broken_soulsymphony?igsh=MXVzamdueDhobWI1eQ=="
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={instagram} alt="Hello" width="30px" height="30px" />
             </a>
           </Contactinfo>
