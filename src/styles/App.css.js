@@ -226,9 +226,9 @@ export const MyImage = styled.img`
   margin-right: 3rem;
   border-radius: 15rem;
   @media screen and (max-width: 768px) {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 10rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 8rem;
     margin-right: 0px;
   }
 `;
@@ -261,7 +261,7 @@ export const Name = styled.div`
   color: #264e74;
   text-align: center;
   @media (max-width: 400px) {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -272,6 +272,9 @@ export const Designation = styled.div`
   margin-top: 20px;
   color: #264e74;
   text-align: center;
+  @media (max-width: 400px) {
+    font-size: 1rem;
+  }
 `;
 export const Contactinfo = styled.div`
   margin-left: 80px;
@@ -279,8 +282,8 @@ export const Contactinfo = styled.div`
   width: 15rem;
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 375px) {
-    margin-left: 60px;
+  @media screen and (max-width: 395px) {
+    margin-left: 40px;
   }
   @media screen and (max-width: 320px) {
     margin-left: 40px;
