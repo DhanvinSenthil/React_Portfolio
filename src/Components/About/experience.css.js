@@ -150,7 +150,7 @@ export const Designation = styled.div`
 `;
 export const CarouselWrapper = styled.div`
   width: 100%;
-  max-width: 1550px;
+  max-width: 1450px;
   margin: auto;
   overflow: hidden;
   padding: 20px; /* Add some padding */
