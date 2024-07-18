@@ -208,9 +208,10 @@ export const AboutParagraph = styled.div`
   font-size: 1.5rem;
   margin-left: 40px;
   margin-right: 40px;
+  margin-right: 40px;
   color: #264e74;
   text-align: center;
-  @media screen and (max-width: 768px) {
+  @media (max-width: 920px) {
     font-size: 0.7rem;
   }
 `;
@@ -399,7 +400,6 @@ export const StyleCards = styled(Card)`
   }
 `;
 export const StyleModalbody = styled(Modal.Body)`
-  //background-color: #f5f5dc;
   border-radius: 1rem;
   @media screen and (max-width: 768px) {
     font-size: 0.7rem;

@@ -46,7 +46,7 @@ export const ProjectDescription = styled.div`
     color: #000;
   }
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 920px) {
     font-size: 0.4rem;
 
     p::before {
@@ -83,7 +83,7 @@ export const ExpParagraph = styled.div`
   margin-right: 40px;
   color: #264e74;
   text-align: left;
-  @media screen and (max-width: 768px) {
+  @media (max-width: 920px) {
     font-size: 0.5rem;
   }
 `;
@@ -153,7 +153,7 @@ export const CarouselWrapper = styled.div`
   max-width: 1450px;
   margin: auto;
   overflow: hidden;
-  padding: 20px; 
+  padding: 20px;
   box-sizing: border-box;
   border-radius: 4px;
 
