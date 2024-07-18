@@ -272,7 +272,7 @@ export const Designation = styled.div`
   margin-top: 20px;
   color: #264e74;
   text-align: center;
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 1rem;
   }
 `;
