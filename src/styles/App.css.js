@@ -260,6 +260,9 @@ export const Name = styled.div`
   margin-right: 40px;
   color: #264e74;
   text-align: center;
+  @media (max-width: 400px) {
+    font-size: 1.7rem;
+  }
 `;
 
 export const Designation = styled.div`
@@ -655,4 +658,3 @@ export const ThankMsg = styled.div`
     font-size: 1rem;
   }
 `;
-
