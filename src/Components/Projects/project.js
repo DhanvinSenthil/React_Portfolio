@@ -231,7 +231,7 @@ const Projects = () => {
                 {Proj3Technologies}
               </CardsStyleSubtitle>
               <ModalGitButton>
-                <a href={Proj3Git}target="_blank" rel="noreferrer">
+                <a href={Proj3Git} target="_blank" rel="noreferrer">
                   <button>
                     <FiGithub size={"30px"} /> Github
                   </button>

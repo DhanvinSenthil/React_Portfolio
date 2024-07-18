@@ -208,10 +208,9 @@ export const AboutParagraph = styled.div`
   font-size: 1.5rem;
   margin-left: 40px;
   margin-right: 40px;
-  margin-right: 40px;
   color: #264e74;
   text-align: center;
-  @media (max-width: 920px) {
+  @media screen and (max-width: 768px) {
     font-size: 0.7rem;
   }
 `;
@@ -227,9 +226,9 @@ export const MyImage = styled.img`
   margin-right: 3rem;
   border-radius: 15rem;
   @media screen and (max-width: 768px) {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 8rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10rem;
     margin-right: 0px;
   }
 `;
@@ -261,9 +260,6 @@ export const Name = styled.div`
   margin-right: 40px;
   color: #264e74;
   text-align: center;
-  @media (max-width: 500px) {
-    font-size: 1.4rem;
-  }
 `;
 
 export const Designation = styled.div`
@@ -273,9 +269,6 @@ export const Designation = styled.div`
   margin-top: 20px;
   color: #264e74;
   text-align: center;
-  @media (max-width: 500px) {
-    font-size: 1rem;
-  }
 `;
 export const Contactinfo = styled.div`
   margin-left: 80px;
@@ -283,10 +276,10 @@ export const Contactinfo = styled.div`
   width: 15rem;
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 395px) {
-    margin-left: 40px;
+  @media screen and (max-width: 375px) {
+    margin-left: 60px;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 320px) {
     margin-left: 40px;
   }
 `;
@@ -400,6 +393,7 @@ export const StyleCards = styled(Card)`
   }
 `;
 export const StyleModalbody = styled(Modal.Body)`
+  //background-color: #f5f5dc;
   border-radius: 1rem;
   @media screen and (max-width: 768px) {
     font-size: 0.7rem;
@@ -661,3 +655,4 @@ export const ThankMsg = styled.div`
     font-size: 1rem;
   }
 `;
+
