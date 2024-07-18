@@ -260,7 +260,7 @@ export const Name = styled.div`
   margin-right: 40px;
   color: #264e74;
   text-align: center;
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 1.4rem;
   }
 `;
@@ -285,7 +285,7 @@ export const Contactinfo = styled.div`
   @media screen and (max-width: 395px) {
     margin-left: 40px;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 500px) {
     margin-left: 40px;
   }
 `;
